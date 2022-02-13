@@ -1,5 +1,5 @@
 ---
-- hosts: ansible
+- hosts: all
   become: true
   roles:
    - user-create
