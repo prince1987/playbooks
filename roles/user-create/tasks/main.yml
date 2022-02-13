@@ -2,9 +2,9 @@
 - name: Creating the users .
   user:
     name: "{{ sname }}"
-    password: "{{ 'Abc123' | password_hash('sha512')  }}"
+    password: "{{ 'mohan' | password_hash('sha512')  }}"
     comment:  "{{ sfull }}"
     shell:  /bin/bash
-    group:  wheel
-    groups: wheel
+    group:  tower
+    groups: tower
     home: /home/{{  sname }}
