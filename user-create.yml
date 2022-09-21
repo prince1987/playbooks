@@ -1,5 +1,5 @@
 ---
-- hosts: mhost1
+- hosts: mhost1 mhost3
   become: true
   roles:
    - user-create
